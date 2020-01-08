@@ -21,6 +21,8 @@ function generatePassword() {
 
   var isNumber = confirm("password contain numbers?");
   var isLower = confirm("password contain lowercase letters?");
+  var isUpper = confirm("password contain uppercase letters?");
+  var isSpecial = confirm("password contain special characters?");
 
   if(isNumber) {
     allSelectTypes = allSelectTypes + number;
@@ -30,7 +32,15 @@ function generatePassword() {
     allSelectTypes = allSelectTypes + lower;
   }
 
-  if (isLower === false && isNumber === false) {
+  if(isUpper) {
+    allSelectTypes = allSelectTypes + upper;
+  }
+
+  if(isSpecial) {
+    allSelectTypes = allSelectTypes + special;
+  }
+
+  if (isLower === false && isNumber === false && isUpper === false && isSpecial === false) {
     alert ("retry");
     return generatePassword();
   }
