@@ -1,9 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var lower = "abcdefghijklmnopqrstuvwxyz";
-//var upper = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z]
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var number = "0123456789";
-//var special = [!,@,#,$,%,^,&,*,?,=,+]
+var special = "!@#$%^&*?=+";
 
 
 
